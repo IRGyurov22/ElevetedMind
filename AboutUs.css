@@ -1,0 +1,183 @@
+.navbar{
+ list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 46%;
+    color: #000000;
+    text-decoration: none;
+    padding: 20px 0; 
+    display: inline-block;
+      
+    line-height: 80px; /* Centers text vertically */
+    /* about us */
+     display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content */
+    height: 80px; /* Adjust as needed */
+margin-left:36%;
+margin-top:0%;
+position: absolute;
+width: 355px;
+ 
+
+font-family: 'Aboreto';
+
+font-weight: 400;
+
+line-height: 24px;
+/* or 150% */
+
+}
+
+
+.btn:active
+{
+  text-decoration:none; 
+color:black;
+/* about us */
+font-size: 30px; 
+position: absolute;
+
+margin-top:0%;
+
+font-family: 'Aboreto';
+
+font-weight: 400;
+
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-bottom: 1px solid black; 
+
+
+  
+}
+.btn:visited
+{
+  color:black;
+  text-decoration:none;
+  /* about us */
+
+position: absolute;
+
+margin-top:0%;
+font-size: 30px; 
+font-family: 'Aboreto';
+
+font-weight: 400;
+
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-bottom: 1px solid black; 
+
+
+  
+}
+.btn:link{
+  text-decoration: none;
+  /* about us */
+margin-top:0%;
+position: absolute;
+
+
+
+font-family: 'Aboreto';
+
+font-weight: 400;
+font-size: 30px;  
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-bottom: 1px solid black; 
+
+}
+.btn:hover
+{
+  text-decoration: none;
+  /* about us */
+margin-top:0%;
+position: absolute;
+
+
+
+font-family: 'Aboreto';
+
+font-weight: 400;
+font-size: 30px; 
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-bottom: 1px solid black; 
+
+}
+
+.aboreto-regular {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+font-size: 30px; 
+margin-top:0%;  
+border-bottom: 1px solid black; 
+}
+
+.square {
+  /* Rectangle 9 */
+
+position: absolute;
+width: 800px;
+height: 700px;
+background: linear-gradient(141.88deg, rgba(190, 172, 172, 0) 6.19%, rgba(214, 221, 227, 0.37) 34.69%, rgba(182, 217, 247, 0.37) 72.44%), #FFFFFF;
+margin-top:120%;  
+margin-left:500%;
+
+}
+
+.oval {
+ /* Group 9 */
+
+position: absolute;
+width: 240px;
+height: 75.04px;
+
+
+}
+.container {
+            position: relative;
+            width: 150px;
+            height: 200px; /* Total height of square + oval */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .oval {
+           position: absolute;
+
+background:rgb(194, 232, 233);
+margin-top:140%;
+margin-left:220%;
+border-radius: 40%;
+            position: absolute;
+            top: 50px; /* Half of the oval's height */
+            left: 50%;
+            transform: translateX(-50%);
+          z-index: 1;
+          width: 350px;
+          }
+
+
+.triangle
+{
+
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #555;
+	border-bottom: 25px solid transparent;
+  margin-top:120%;
+}
