@@ -1,0 +1,323 @@
+.header
+{
+  /* Your Mental Health Matter */
+
+position: absolute;
+width: 600px;
+height: 300px;
+
+font-family: 'Antic Slab';
+font-style: normal;
+font-weight: 400;
+font-size: 55px;
+line-height: 32px;
+margin-left:35%;
+margin-top:8%;
+/* or 89% */
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.star{
+/* free-star-icon-2768-thumb-Photoroom 1 */
+
+position: absolute;
+width: 100px;
+height: 105px;
+margin-top:8%;
+margin-left:64%;
+size: 100px;
+
+
+background: url(free-star-icon-2768-thumb-Photoroom.png);
+transform: rotate(16.96deg);
+}
+
+
+
+.hug
+{
+
+  /* c775b7509927aec5312827a8834a7f0c-Photoroom 1 */
+
+position: absolute;
+width: 350px;
+height: 400px;
+
+background: url(c775b7509927aec5312827a8834a7f0c-Photoroom.png);
+margin-top:15%;
+margin-left:70%;
+}
+
+.healingQuote
+{
+
+  /* dd533be9b5e016ddf6939c857d6d8187-Photoroom 1 */
+
+position: absolute;
+width: 500px;
+height: 500px;
+margin-top:23%;
+margin-left:2%;
+background: url(dd533be9b5e016ddf6939c857d6d8187-Photoroom.png);
+
+}
+.planet
+{
+  /* image-Photoroom */
+
+position: absolute;
+width: 170px;
+height: 200px;
+margin-top:10%;
+margin-left:10%;
+background: url(image-Photoroom.png);
+
+}
+
+.head{
+/* image 1 */
+
+position: absolute;
+width: 500x;
+height: 550px;
+margin-top:20%;
+margin-left:35%;  
+
+background: url(image.png);
+}
+
+
+.navbar{
+ list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 46%;
+    color: #000000;
+    text-decoration: none;
+    padding: 20px 0; 
+    display: inline-block;
+      
+    line-height: 80px; /* Centers text vertically */
+    /* about us */
+     display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center content */
+    height: 80px; /* Adjust as needed */
+margin-left:36%;
+margin-top:0%;
+position: absolute;
+width: 355px;
+ 
+
+font-family: 'Aboreto';
+
+font-weight: 400;
+
+line-height: 24px;
+/* or 150% */
+
+}
+
+
+.btn:active
+{
+  text-decoration:none; 
+color:black;
+/* about us */
+font-size: 30px; 
+position: absolute;
+
+margin-top:0%;
+
+font-family: 'Aboreto';
+
+font-weight: 400;
+
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-bottom: 1px solid black; 
+
+
+  
+}
+.btn:visited
+{
+  color:black;
+  text-decoration:none;
+  /* about us */
+
+position: absolute;
+
+margin-top:0%;
+font-size: 30px; 
+font-family: 'Aboreto';
+
+font-weight: 400;
+
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-bottom: 1px solid black; 
+
+
+  
+}
+.btn:link{
+  text-decoration: none;
+  /* about us */
+margin-top:0%;
+position: absolute;
+
+
+
+font-family: 'Aboreto';
+
+font-weight: 400;
+font-size: 30px;  
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-bottom: 1px solid black; 
+
+}
+.btn:hover
+{
+  text-decoration: none;
+  /* about us */
+margin-top:0%;
+position: absolute;
+
+
+
+font-family: 'Aboreto';
+
+font-weight: 400;
+font-size: 30px; 
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-bottom: 1px solid black; 
+
+}
+
+.aboreto-regular {
+  font-family: "Aboreto", system-ui;
+  font-weight: 400;
+  font-style: normal;
+font-size: 30px; 
+margin-top:0%;  
+border-bottom: 1px solid black; 
+}
+
+.getStarted:active
+{
+text-decoration:none; 
+color:black;
+/* about us */
+font-size: 30px; 
+position: absolute;
+width: 400px;
+margin-top:-2%;     
+margin-left:200%;
+font-family: 'Aboreto';
+
+font-weight: 400;
+
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-radius: 40px;
+  border: 2px solid #000000;
+  padding: 20px; 
+  width: 200px;
+  height: 40px;
+
+}
+
+.getStarted:visited
+{
+  text-decoration:none; 
+color:black;
+/* about us */
+font-size: 30px; 
+position: absolute;
+width: 400px;
+margin-top:-2%;     
+margin-left:200%;
+font-family: 'Aboreto';
+
+font-weight: 400;
+
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-radius: 40px;
+  border: 2px solid #000000;
+  padding: 20px; 
+   width: 200px;
+  height: 40px;
+
+}
+
+.getStarted:link{
+  text-decoration:none; 
+color:black;
+/* about us */
+font-size: 30px; 
+position: absolute;
+width: 400px;
+margin-top:-2%;   
+margin-left:200%;
+font-family: 'Aboreto';
+
+font-weight: 400;
+
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-radius: 40px;
+  border: 2px solid #000000;
+  padding: 20px; 
+  width: 200px;
+  height: 40px;
+
+
+}
+.getStarted:hover
+{
+  text-decoration:none; 
+color:black;
+/* about us */
+font-size: 30px; 
+position: absolute;
+width: 400px;
+margin-top:-2%;   
+margin-left:200%;
+font-family: 'Aboreto';
+
+font-weight: 400;
+
+line-height: 24px;
+/* or 150% */
+
+color: #000000;
+border-radius: 40px;
+  border: 2px solid #000000;
+  padding: 20px; 
+  width: 200px;
+  height: 40px;
+
+
+}
