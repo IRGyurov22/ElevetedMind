@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .header a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 5px;
+        }
+        .header a:hover {
+            border-bottom: 2px solid black;
+        }
+        .chat-container {
+            background: linear-gradient(to bottom right, #eef5ff, #d0e2ff);
+            width: 60%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .chat-bubble {
+            background: #b3d4fc;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            max-width: 80%;
+        }
+        .footer {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+        .illustration {
+            position: absolute;
+            right: 10%;
+            bottom: 10%;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#">ABOUT US</a>
+        <a href="#">FEEDBACK</a>
+    </div>
+    <div class="chat-container">
+        <div class="chat-bubble">HOW CAN I HELP YOU?</div>
+        <div class="footer">FEEL FREE TO ASK QUESTIONS</div>
+    </div>
+    <img src="illustration.png" alt="Illustration" class="illustration">
+</body>
+</html>

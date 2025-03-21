@@ -1,0 +1,213 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Aboreto', sans-serif;
+}
+
+.header {
+  text-align: center;
+  font-size: 3rem;
+  max-width: 80%;
+  margin: 5% auto;
+  color: black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.star {
+  position: absolute;
+  width: 10vw; 
+  max-width: 100px;
+  height: auto;
+  top: 10%;
+  right: 10%;
+  background: url(free-star-icon-2768-thumb-Photoroom.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(16.96deg);
+  margin:20px 100px 0px 0px;
+  
+}
+
+
+.hug {
+  position: absolute;
+  width: 30vw;
+  max-width: 350px;
+  height: auto;
+  top: 20%;
+  right: 5%;
+  background: url(c775b7509927aec5312827a8834a7f0c-Photoroom.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.healingQuote {
+  position: absolute;
+  width: 40vw;
+  max-width: 500px;
+  height: auto;
+  top: 25%;
+  left: 2%;
+  background: url(dd533be9b5e016ddf6939c857d6d8187-Photoroom.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.planet {
+  position: absolute;
+  width: 15vw;
+  max-width: 170px;
+  height: auto;
+  top: 15%;
+  left: 5%;
+  background: url(image-Photoroom.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.head {
+  position: absolute;
+  width: 40vw;
+  max-width: 500px;
+  height: auto;
+  top: 30%;
+  left: 30%;
+  background: url(image.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  margin: 7px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid black;
+}
+
+
+.btn {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+.btn:hover {
+  border-bottom: 2px solid black;
+}
+
+
+.getStarted {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px 20px;
+  width: 200px;
+  border-radius: 40px;
+  border: 2px solid #000;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.getStarted:hover {
+  background: black;
+  color: white;
+}
+
+.footer p {
+  font-size: 15px;
+  color: #777;
+  margin: 0;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 18px;
+  color: #555;
+  transition: color 0.3s ease, transform 0.3s;
+}
+
+.icon:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+.instagram:hover {
+  color: #E1306C;
+}
+
+.facebook:hover {
+  color: #1877F2;
+}
+
+.twitter:hover {
+  color: #1DA1F2;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 2rem;
+    text-align: center;
+    width: 90%;
+  }
+
+
+
+
+  .star, .hug, .healingQuote, .planet, .head {
+    position: relative;
+    margin: 10px auto;
+    display: block;
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .getStarted {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+@media{
+
+}
