@@ -4,112 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot UI</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-        .header {
-            
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        margin: 0 auto;
-        padding: 20px 0;
-    font-size: 1.5rem;
-        }
-        .header a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 5px;
-        }
-        .header a:hover {
-            border-bottom: 2px solid black;
-        }
-        .chat-container {
-            background: linear-gradient(to bottom right, #7a9bd7, #b3d4fc);
-            width: 60%;
-            height: 400px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .chat-box {
-            flex-grow: 1;
-            overflow-y: auto;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        .chat-bubble {
-            background: #b3d4fc;
-            padding: 10px;
-            border-radius: 10px;
-            display: inline-block;
-            max-width: 80%;
-            margin-bottom: 10px;
-        }
-        .user-input {
-            display: flex;
-            margin-top: 10px;
-        }
-        .user-input input {
-            flex-grow: 1;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .user-input button {
-            padding: 10px 15px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin-left: 10px;
-            cursor: pointer;
-        }
-        .chatbot-icon {
-            width: 40px;
-            height: 40px;
-            background: #007bff;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            font-weight: bold;
-            margin-right: 10px;
-        }
-        .message {
-            display: flex;
-            align-items: center;
-        }
-    </style>
+  <link rel="stylesheet" href="../styles/getStarted.css">
+    
 </head>
 <body>
-    <div class="header">
-        <a href="#">ABOUT US</a>
-        <a href="#">FEEDBACK</a>
-    </div>
-    <div class="chat-container">
-        <div class="chat-box">
-            <div class="message">
-                <div class="chatbot-icon">🤖</div>
-                <div class="chat-bubble">HOW CAN I HELP YOU?</div>
+    <a class="btn" href="AboutUs.html">About Us</a>
+
+    <div class="container">
+        <!-- Left-side image -->
+        <div class="photo"></div>
+        
+        <div class="chat-container">
+            <div class="chat-box">
+                <div class="message">
+                    <div class="chatbot-icon">🤖</div>
+                    <div class="chat-bubble">HOW CAN I HELP YOU?</div>
+                </div>
             </div>
-        </div>
-        <div class="user-input">
-            <input type="text" placeholder="Type your message...">
-            <button>Send</button>
+            <div class="user-input">
+                <input type="text" placeholder="Type your message...">
+                <button>Send</button>
+            </div>
         </div>
     </div>
 </body>

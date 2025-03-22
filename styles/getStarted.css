@@ -1,126 +1,113 @@
-.navbar{
- list-style-type: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 46%;
-    color: #000000;
-    text-decoration: none;
-    padding: 20px 0; 
-    display: inline-block;
-      
-    line-height: 80px; /* Centers text vertically */
-    /* about us */
-     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Center content */
-    height: 80px; /* Adjust as needed */
-margin-left:36%;
-margin-top:0%;
-position: absolute;
-width: 355px;
- 
-
-font-family: 'Aboreto';
-
-font-weight: 400;
-
-line-height: 24px;
-/* or 150% */
-
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 95vh;
+  margin: 0;
+  position: relative;
 }
 
-
-.btn:active
-{
-  text-decoration:none; 
-color:black;
-/* about us */
-font-size: 30px; 
-position: absolute;
-
-margin-top:0%;
-
-font-family: 'Aboreto';
-
-font-weight: 400;
-
-line-height: 24px;
-/* or 150% */
-
-color: #000000;
-border-bottom: 1px solid black; 
-
-
-  
-}
-.btn:visited
-{
-  color:black;
-  text-decoration:none;
-  /* about us */
-
-position: absolute;
-
-margin-top:0%;
-font-size: 30px; 
-font-family: 'Aboreto';
-
-font-weight: 400;
-
-line-height: 24px;
-/* or 150% */
-
-color: #000000;
-border-bottom: 1px solid black; 
-
-
-  
-}
-.btn:link{
+.btn {
+  font-size: 1.5rem;
+  color: purple;
   text-decoration: none;
-  /* about us */
-margin-top:0%;
-position: absolute;
-
-
-
-font-family: 'Aboreto';
-
-font-weight: 400;
-font-size: 30px;  
-line-height: 24px;
-/* or 150% */
-
-color: #000000;
-border-bottom: 1px solid black; 
-
-}
-.btn:hover
-{
-  text-decoration: none;
-  /* about us */
-margin-top:0%;
-position: absolute;
-
-
-
-font-family: 'Aboreto';
-
-font-weight: 400;
-font-size: 30px; 
-line-height: 24px;
-/* or 150% */
-
-color: #000000;
-border-bottom: 1px solid black; 
-
+  border-bottom: 2px solid transparent;
+  font-family: 'Aboreto', sans-serif;
+  position: absolute;
+  top: 40px;
 }
 
-.aboreto-regular {
-  font-family: "Aboreto", system-ui;
-  font-weight: 400;
-  font-style: normal;
-font-size: 30px; 
-margin-top:0%;  
-border-bottom: 1px solid black; 
+.btn:hover {
+  border-bottom: 2px solid black;
+}
+
+/* Main Container */
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  margin-top: 70px; /* Adjusted for equal spacing */
+}
+
+.photo {
+  width: 500px;
+  height: 100%;
+}
+
+/* Chat Container */
+.chat-container {
+  background: linear-gradient(to bottom right, #6143c4, #7860c8, #c8b3ee);
+  width: 1000px;
+  height: 500px;
+  padding: 23px;
+  border-radius: 0 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+}
+
+.chat-bubble {
+  background: #b3d4fc;
+  padding: 12px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 80%;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.user-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.user-input input {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.user-input button {
+  padding: 12px 20px;
+  background: #3b2f62;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.chatbot-icon {
+  width: 40px;
+  height: 40px;
+  background: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }

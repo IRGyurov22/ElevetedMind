@@ -1,213 +1,118 @@
-
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Aboreto', sans-serif;
-}
-
-.header {
+  font-family: Arial, sans-serif;
   text-align: center;
-  font-size: 3rem;
-  max-width: 80%;
-  margin: 5% auto;
-  color: black;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #f7f7f7;
+  overflow-x: hidden;
+  position: relative; /* This allows us to position the button at the bottom right */
 }
 
-
-.star {
-  position: absolute;
-  width: 10vw; 
-  max-width: 100px;
-  height: auto;
-  top: 10%;
-  right: 10%;
-  background: url(free-star-icon-2768-thumb-Photoroom.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  transform: rotate(16.96deg);
-  margin:20px 100px 0px 0px;
-  
-}
-
-
-.hug {
-  position: absolute;
-  width: 30vw;
-  max-width: 350px;
-  height: auto;
-  top: 20%;
-  right: 5%;
-  background: url(c775b7509927aec5312827a8834a7f0c-Photoroom.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.healingQuote {
-  position: absolute;
-  width: 40vw;
-  max-width: 500px;
-  height: auto;
-  top: 25%;
-  left: 2%;
-  background: url(dd533be9b5e016ddf6939c857d6d8187-Photoroom.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-
-.planet {
-  position: absolute;
-  width: 15vw;
-  max-width: 170px;
-  height: auto;
-  top: 15%;
-  left: 5%;
-  background: url(image-Photoroom.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-
-.head {
-  position: absolute;
-  width: 40vw;
-  max-width: 500px;
-  height: auto;
-  top: 30%;
-  left: 30%;
-  background: url(image.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-
-.navbar {
+.about-us-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin: 0 auto;
-  padding: 20px 0;
-  font-size: 1.5rem;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-  position: absolute;
-  top: 50px;
-  margin: 7px;
-  padding-left: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar a:hover {
-  border-bottom: 2px solid black;
-}
-
-
-.btn {
-  font-size: 1.5rem;
-  color: black;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-}
-
-.btn:hover {
-  border-bottom: 2px solid black;
-}
-
-
-.getStarted {
-  font-size: 1.5rem;
   text-align: center;
-  padding: 10px 20px;
-  width: 200px;
-  border-radius: 40px;
-  border: 2px solid #000;
-  color: black;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  z-index: 5;
-  position: absolute;
-  top: 0;
-  right: 5px;
-}
-
-.getStarted:hover {
-  background: black;
+  clip-path: polygon(0% 0%, 100% 0, 100% 100%, 70% 74%, 0 100%);
+  background: linear-gradient(142deg, rgba(97,67,196,1) 0%, rgba(200,179,238,1) 100%);
   color: white;
 }
 
-.footer p {
-  font-size: 15px;
-  color: #777;
-  margin: 0;
+.about-us-wrapper h1 {
+  font-family: 'Antic Slab', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.footer-social-icons {
+.content {
   display: flex;
-  gap: 15px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  margin: 80px auto;
 }
 
-.icon {
-  font-size: 18px;
-  color: #555;
-  transition: color 0.3s ease, transform 0.3s;
+.illustration {
+  flex: 1;
+  text-align: left;
 }
 
-.icon:hover {
-  color: #000;
-  transform: scale(1.2);
+.illustration img {
+  max-width: 100%;
+  height: auto;
 }
 
-.instagram:hover {
-  color: #E1306C;
+.text-section {
+  flex: 1;
+  text-align: center;
 }
 
-.facebook:hover {
-  color: #1877F2;
+.quote-container {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  font-weight: bold;
+  color: #4e0dab;
+  border-radius: 15px;
+  padding: 40px;
+  max-width: 550px;
+  margin-top: 70px;
+  bottom: 40px;
+  line-height: 1.5;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(-10deg); /* Rotation added */
 }
 
-.twitter:hover {
-  color: #1DA1F2;
+.quote-container:hover {
+  transform: rotate(10deg); /* Slight rotation change on hover */
 }
 
-@media screen and (max-width: 768px) {
-  .header {
-    font-size: 2rem;
-    text-align: center;
-    width: 90%;
+/* Styling for the button */
+.cta {
+  background: #6a11cb;
+  color: white;
+  border: none;
+  padding: 18px 35px;
+  font-size: 24px;  /* Increased font size */
+  border-radius: 30px;  /* Larger border radius */
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  bottom: 30px;  /* Distance from the bottom */
+  right: 30px;   /* Distance from the right */
+  text-decoration: none; /* Removes the underline */
+}
+
+.cta:hover {
+  background: #4e0dab;
+}
+
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column;
+      text-align: center;
   }
 
-
-
-
-  .star, .hug, .healingQuote, .planet, .head {
-    position: relative;
-    margin: 10px auto;
-    display: block;
-    width: 80%;
-    max-width: 400px;
+  .quote-container {
+      font-size: 24px;
+      padding: 30px;
+      margin-bottom: 15px;
+      transform: rotate(0deg); /* Remove rotation on smaller screens */
   }
 
-  .getStarted {
-    width: 100%;
-    max-width: 250px;
+  .cta {
+      margin-top: 10px;
+      font-size: 20px; /* Adjust font size for smaller screens */
+      padding: 15px 30px;
+      bottom: 20px;  /* Adjust position for smaller screens */
+      right: 20px;   /* Adjust position for smaller screens */
   }
-}
-@media{
-
 }
