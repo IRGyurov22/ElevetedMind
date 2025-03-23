@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
 import AI
 
@@ -28,21 +28,26 @@ def index():
 
 @app.route("/getStarted", methods=["POST", "GET"])
 def getStarted():
-    messages = Message.query.all()
-
     if request.method == "POST":
         userText = request.form["text"]
 
+        # Save user message
         message = Message(text=userText)
-
         db.session.add(message)
         db.session.commit()
 
-        message = Message(text=chatBot.chat(message=message.text))
-
-        db.session.add(message)
+        # Process chatbot response
+        response_text = chatBot.chat(message=message.text)
+        response_message = Message(text=response_text)
+        db.session.add(response_message)
         db.session.commit()
-    return render_template('getStarted.html')
+
+        # Redirect to refresh the page and use GET method
+        return redirect(url_for("getStarted"))
+
+        # GET method: Retrieve all messages
+    messages = Message.query.all()
+    return render_template('getStarted.html', messages=messages)
 
 @app.route("/about")
 def about():

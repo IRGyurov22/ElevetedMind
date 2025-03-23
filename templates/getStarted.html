@@ -5,20 +5,17 @@
     <div class="chatbot-icon">🤖</div>
     <div class="chat-bubble"><p>Ask me anything</p></div>
 </dt>
-<dd>
-    <div class="human-bubble"><p>Anything!</p></div>
-</dd>
-{% for el in messages %}
-    {% if loop.index is even %}
+{% for el in messages%}
+    {% if loop.index is even%}
+        <dd>
+            <div class="human-bubble"><p>{{ el.text }}</p></div>
+        </dd>
+    {% else %}
         <dt>
             <div class="chatbot-icon">🤖</div>
             <div class="chat-bubble"><p>{{ el.text }}</p></div>
         </dt>
-    {% else %}
-        <dd>
-            <div class="human-bubble"><p>{{ el.text }}</p></div>
-        </dd>
-    {% endif %}
-{% endfor %}
+    {% endif%}
+{% endfor%}
 
 {% endblock %}

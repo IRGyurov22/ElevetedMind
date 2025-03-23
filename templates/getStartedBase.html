@@ -8,6 +8,18 @@
     
 </head>
 <body>
+    <script>
+  function scrollToBottom() {
+    var chatContainer = document.getElementById("chatContainer");
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+  }
+
+  // Call this function after new messages are rendered
+  // Example:
+  document.addEventListener("DOMContentLoaded", function() {
+    scrollToBottom();
+  });
+</script>
     <a class="btn" href="/about">About Us</a>
 
     <div class="container">
@@ -15,7 +27,7 @@
         <div class="photo"></div>
         
         <div class="chat-container">
-            <div class="chat-box">
+            <div class="chat-box" id="chat-box">
                 <div class="message">
                         <dl>
                             {% block messages %}{% endblock %}
@@ -28,5 +40,6 @@
             </form>
         </div>
     </div>
+
 </body>
 </html>
