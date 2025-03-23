@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-  <link rel="stylesheet" href="../styles/AboutUs.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/AboutUs.css') }}">
     
 </head>
 <body>
@@ -27,8 +27,8 @@
                 <p>You are not alone. Let's take this journey together. 💙</p>
             </div>
             <div class="mental-health">
-                <img class="mental-health-text" src="../img/mental-health.png" alt="">
-                <img class="survey" src="../img/survey.png" alt="">
+                <img class="mental-health-text" src="{{ url_for('static', filename='img/mental-health.png') }}" alt="">
+                <img class="survey" src="{{ url_for('static', filename='img/survey.png') }}" alt="">
             </div>
         </div>
     </div>

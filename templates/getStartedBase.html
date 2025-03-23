@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UI</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/getStarted.css') }}">
+    
+</head>
+<body>
+    <a class="btn" href="/about">About Us</a>
+
+    <div class="container">
+        <!-- Left-side image -->
+        <div class="photo"></div>
+        
+        <div class="chat-container">
+            <div class="chat-box">
+                <div class="message">
+                        <dl>
+                            {% block messages %}{% endblock %}
+                        </dl>
+                </div>
+            </div>
+            <form method="post" class="user-input">
+                    <input type="text" name="text" id="text" placeholder="Type your message..."><br>
+                    <input class="btn" type="submit" value="send">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

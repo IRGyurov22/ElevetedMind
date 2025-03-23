@@ -16,8 +16,15 @@ body {
   text-decoration: none;
   border-bottom: 2px solid transparent;
   font-family: 'Aboreto', sans-serif;
-  position: absolute;
+  width: 10%;
   top: 40px;
+  padding: 12px 20px;
+  background: #3b2f62;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -56,6 +63,7 @@ body {
 
 .chat-box {
   flex-grow: 1;
+  overflow-x: hidden;
   overflow-y: auto;
   border-bottom: 1px solid #ddd;
   align-items: center;
@@ -66,7 +74,7 @@ body {
   padding: 12px;
   border-radius: 10px;
   display: inline-block;
-  max-width: 80%;
+  width: 80%;
   margin-bottom: 10px;
   align-self: flex-start;
 }
@@ -82,17 +90,6 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-
-.user-input button {
-  padding: 12px 20px;
-  background: #3b2f62;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
 .chatbot-icon {
   width: 40px;
   height: 40px;
@@ -110,4 +107,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+dl {
+    width: 1000px;
+    margin: auto;
+}
+
+dt {
+    display: flex;
+}
+
+.human-bubble {
+    background: #8db3e0;
+  padding: 12px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-left: 13%;
+  text-align: right;
 }
