@@ -1,6 +1,6 @@
-<h1 **align**="center">ElevetedMind</h1>
+<h1 align="center">ElevetedMind</h1>
 
-<p **align** = "center">
+<p align = "center">
   <img src="./Doc/Logo.png"/>
 </p>
 
